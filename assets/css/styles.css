@@ -3,7 +3,7 @@ p {
 }
 
 .simple-slider .swiper-slide {
-  min-height: 500px;
+  min-height: 420px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -53,5 +53,14 @@ p {
 
 .screenshot-img {
   width: 90%;
+}
+
+.slide-item {
+  height: 360px;
+  /*overflow-y: scroll;*/
+}
+
+.modal-dialog-centered {
+  align-items: end;
 }
 

@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded", function() {
               return '<span class="' + className + '">' + (index + 1) + "</span>";
             },
           },
+        autoplay: {
+            delay: 3000,
+            pauseOnMouseEnter: false,
+            disableOnInteraction: false,
+            waitForTransition: true,
+            stopOnLastSlide: false,
+
+        },
         paginationClickable: true,
         navigation: {
             nextEl: '.swiper-button-next',
@@ -21,3 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     
 });
+
+function promptMsg(){
+    alert('Test Prompt')
+}
