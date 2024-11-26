@@ -35,7 +35,64 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section><script>
+// PoC Demo Preloader
+window.addEventListener('load', function() {
+  setTimeout(function() {
+    var element = document.getElementById('hex-loader');
+    if (element) {
+      element.style.display = 'none';
+    }
+  }, 3000); // 3000 milliseconds = 3 seconds
+});
+</script>
+<div id="hex-loader">
+    <div class="hex-wrap">
+        <div class="hex-center mt50 rss-loader">
+            <div class="hex-row odd">
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+            </div>
+            <div class="hex-row">
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+            </div>
+            <div class="hex-row odd">
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+                <div class="hex">
+                    <div class="hex-top"></div>
+                    <div class="hex-mid"></div>
+                    <div class="hex-bot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
