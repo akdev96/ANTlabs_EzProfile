@@ -27,10 +27,23 @@
                             </ol>
                         </div>
                     </section>
-                    <div><img class="p-4 pt-0 text-center" src="assets/img/download_1.png" style="width: 100%;"></div><a class="btn btn-success btn-lg btn-dark mt-3 mb-4" role="button" style="width: 100%;" href="./iphone-test.mobileconfig" download=""><strong>Download your WiFi&nbsp;Profile</strong></a>
+                    <div><img class="p-4 pt-0 text-center" src="assets/img/download_1.png" style="width: 100%;"></div><a class="btn btn-success btn-lg btn-dark mt-3 mb-4" role="button" id="downloadBtn" style="width: 100%;" download="" href="activate.html"><strong>Download your WiFi&nbsp;Profile</strong></a>
                 </div>
             </div>
-        </div>
+        </div><script> document.getElementById('downloadBtn').addEventListener('click', function(event) {
+      event.preventDefault();
+      var link = document.createElement('a');
+      link.href = './iphone-test.mobileconfig';
+      link.download = 'iphone-test.mobileconfig';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      setTimeout(function() {
+        window.location.href = 'activate.php';
+      }, 3000); // Adjust the time as needed
+    });
+  </script>
     </section>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
